@@ -1,0 +1,150 @@
+$lightPink: #f8eded;
+$green: #aeda9f;
+$greenLighter: #aeda9f88;
+@import url("https://fonts.googleapis.com/css2?family=Belleza&display=swap");
+$font: "Belleza", sans-serif;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+p,
+q {
+  font-size: 1.2rem;
+  line-height: 1.7;
+}
+
+body {
+  font-family: $font;
+}
+
+header {
+  background-color: $lightPink;
+}
+
+.logo {
+  margin: 0 auto;
+  width: 150px;
+  height: 150px;
+
+  &__img {
+    width: 150px;
+  }
+}
+
+.leaf {
+  width: 75px;
+}
+
+.navbar {
+  padding: 1em;
+  & ul {
+    display: flex;
+    justify-content: space-evenly;
+
+    & li {
+      list-style: none;
+
+      & a {
+        text-decoration: none;
+        color: slategrey;
+        font-size: 1.3rem;
+      }
+    }
+  }
+}
+
+.intro {
+  background-color: $lightPink;
+  padding: 1em;
+  text-align: center;
+
+  &__para {
+    font-size: 1.3rem;
+  }
+}
+
+.about,
+.services {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 90%;
+  margin: 2em auto;
+  align-items: center;
+  justify-items: center;
+  grid-row-gap: 2em;
+
+  &__img {
+    grid-column: 1/2;
+  }
+
+  &__title {
+    grid-column: 2/3;
+    background: $lightPink;
+    padding: 1em;
+  }
+
+  &__para {
+    grid-column: 1/3;
+    text-align: center;
+  }
+
+  &__btn {
+    grid-column: 1/3;
+    width: 100%;
+    background-color: $green;
+    border: none;
+    padding: 0.5em;
+    cursor: pointer;
+    font-size: 1.4rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.review {
+  background-image: url("/assets/minimal\ plant.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  padding: 1em;
+
+  &__quote {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 1em;
+    padding: 1em;
+    text-align: center;
+    border-radius: 20px;
+  }
+}
+
+.services {
+  &__title {
+    grid-column: 1/2;
+    font-size: 1.5rem;
+  }
+
+  &__img {
+    grid-column: 2/3;
+  }
+  &__container {
+    grid-column: 1/3;
+    text-align: center;
+  }
+
+  &__container {
+    background-color: $greenLighter;
+  }
+
+  &__text {
+    padding: 1em;
+  }
+}
+.container__title {
+  background-color: $lightPink;
+  font-size: 1.5rem;
+  padding: 0.25em;
+  margin-bottom: 0.5em;
+}

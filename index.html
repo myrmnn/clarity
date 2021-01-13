@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarity Cleaning</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="/assets/logo.png" alt="logo" class="logo__img">
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar__ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#Contact">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="intro">
+        <p class="intro__para">Small Home and Office Cleaning Solutions</p>
+    </div>
+    <div class="hero">
+        <picture>
+            <source
+              media="(max-width: 500px)"
+              srcset="assets/500_cozyhome.jpg 500w"
+            />
+            <source
+              media="(min-width: 501px)"
+              srcset="/assets/1292_cozyhome.jpg 1292w"
+            />
+            <source
+            media="(min-width: 1293px)"
+            srcset="/assets/2000_cozyhome.jpg 2000w"
+          />
+            <img
+              class="hero__img"
+              src="/assets/500_cozyhome.jpg 500w, /assets/1292_cozyhome.jpg 1292w, /assets/2000_cozyhome.jpg 2000w"
+              alt="couch with throw blanket and pillow"
+            />
+          </picture>
+    </div>
+    <section class="about">
+        <img src="/assets/leaves.jpg" alt="leaf logo" class="leaf about__img">
+        <h1 class="about__title">About Us</h1>
+        <p class="about__para">For over 5 years, I have been providing cleaning services for small homes and offices and I take great pride in the work that I do. I clean your home as if it were my own and I love making your home a place you love being. Whether you need your whole house cleaned or just a few rooms Clarity Cleaning has got you covered.</p>
+        <button class="about__btn">Contact For Free Quote</button>
+    </section>
+    <section class="review">
+        <div class="review__quote"> 
+            <q class="review__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam corrupti rerum, aliquid delectus ullam velit ab officia amet est vel laudantium adipisci officiis sunt deleniti incidunt nisi iusto quod modi? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perspiciatis assumenda fugiat aliquam blanditiis cupiditate quasi, sed magni mollitia optio deleniti laboriosam voluptas, cum dignissimos qui velit repellendus quibusdam, provident rem.
+        </q>
+        </div>
+    </section>
+    <section class="services">
+        <h2 class="services__title">Services</h2>
+        <img src="/assets/leaflogo-bgpink.png" alt="leaf logo" class="leaf services__img">
+        <div class="services__container">
+            <p class="container__title">Residential Cleaning</p>
+            <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dicta animi dignissimos aut nisi obcaecati numquam dolorem cum. Natus dolorum dicta similique suscipit obcaecati explicabo aspernatur distinctio, illum iste quae?</p>
+        </div>
+        <div class="services__container">
+            <p class="container__title">Office Cleaning</p>
+            <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis dicta animi dignissimos aut nisi obcaecati numquam dolorem cum. Natus dolorum dicta similique suscipit obcaecati explicabo aspernatur distinctio, illum iste quae?</p>
+        </div>
+    </section>
+    <section class="contact">
+        <form action="">
+            <div>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+            </div>
+            <div>
+                <label for="phone">Phone:</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+            <div>
+                <label for="message">Message:</label>
+                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            </div>
+        </form>
+
+    </section>
+</body>
+</html>
